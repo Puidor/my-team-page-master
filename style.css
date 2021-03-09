@@ -1,0 +1,183 @@
+/*GLOBAL =============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*HEADER =============================== */
+
+header {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 11rem;
+  justify-content: space-between;
+}
+
+.header-left {
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+}
+
+.header-right h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+
+  width: 278px;
+}
+
+.header-right p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+
+  width: 439px;
+}
+
+/*MAIN =============================== */
+main {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-top: 9rem;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33.33%;
+  margin-top: 5rem;
+}
+
+.card-down {
+  margin-top: 15rem;
+}
+
+.photo-prof {
+  display: flex;
+}
+
+.photo-prof img {
+  width: 100%;
+}
+
+.photo-prof span {
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+
+  width: 250px;
+  height: 16px;
+
+  text-transform: uppercase;
+
+  transform: rotate(90deg);
+
+  margin-left: -7rem;
+  margin-top: 10rem;
+}
+
+.card p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+
+  margin-top: 1rem;
+}
+
+/*FOOTER =============================== */
+footer {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  color: #bdbdbd;
+
+  margin-top: 5rem;
+}
+
+/*============================================== */
+/*==============MOBILE VERSION================== */
+/*============================================== */
+
+@media (max-width: 1020px) {
+  body {
+    width: 95%;
+    margin: auto;
+  }
+  header {
+    flex-direction: column;
+  }
+  .header-right {
+    margin-top: 3rem;
+  }
+  .header-right p {
+    width: initial;
+  }
+  .header-right h1 {
+    width: initial;
+  }
+  /*MAIN =============================== */
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  .photo-prof span {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-left: -6.5rem;
+    margin-top: 10rem;
+  }
+
+  .card p {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .card {
+    margin-top: initial;
+    width: 40%;
+    flex-wrap: wrap;
+  }
+
+  .card-down {
+    margin-top: initial;
+  }
+  .card-down-mobile {
+    margin-top: 10rem;
+  }
+}
